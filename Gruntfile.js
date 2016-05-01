@@ -77,6 +77,22 @@ module.exports = function(grunt) {
       }
     },
 
+    // jekyll: {
+    //   options: {
+    //     src: '.',
+    //     dest: '_site',
+    //     config: '_config.yml'
+    //   },
+    //   serve: {
+    //     options: {
+    //       serve: true,
+    //       dest: '_site',
+    //       drafts: true,
+    //       raw: "baseurl: ''"
+    //     }
+    //   }
+    // },
+
     buildcontrol: {
       options: {
         dir: '_site',
