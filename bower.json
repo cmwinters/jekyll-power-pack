@@ -1,0 +1,17 @@
+{
+  "name": "jekyll-power-pack",
+  "version": "0.0.1",
+  "description": "Powerful Jekyll build",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "_site",
+    "node_modules",
+    "assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  }
+}
