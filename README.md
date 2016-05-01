@@ -50,8 +50,6 @@ $ grunt publish
 
 This takes the `_site` directory, generates it's own Git repository there, and publishes the contents to the `gh-pages` branch here on GitHub. Changes are reflected in the hosted docs within a minute or so.
 
-
-
 ## License
 
 Released under the [MIT license](LICENSE.md).
