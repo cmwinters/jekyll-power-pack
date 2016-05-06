@@ -8,14 +8,14 @@ module.exports = function(grunt) {
     sass: {
       options: {
         sourceMap: true,
-        outputStyle: "compressed",
+        outputStyle: "expanded",
         includePaths: [
           "node_modules/"
         ]
       },
       dist: {
         files: {
-            'assets/stylesheets/main.css': 'assets/stylesheets/main.scss'
+            'assets/css/main.css': 'assets/scss/main.scss'
         }
       }
     },
@@ -52,11 +52,11 @@ module.exports = function(grunt) {
           'TotalImportantKeywords',
           'TotalMediaQueries'
         ],
-        file: "css/.primer-stats.md",
+        file: "assets/css/.css-stats.md",
         usePackage: true
       },
       src: [
-        'css/*.css'
+        'assets/css/*.css'
       ]
     },
 
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
 
     watch: {
       sass: {
-        files: ['assets/scss/**/*.scss'],
+        files: ['assets/scss/*.scss'],
         tasks: ['sass', 'postcss', 'parker']
       }
     },
@@ -76,22 +76,6 @@ module.exports = function(grunt) {
         config: '_config.yml'
       }
     },
-
-    // jekyll: {
-    //   options: {
-    //     src: '.',
-    //     dest: '_site',
-    //     config: '_config.yml'
-    //   },
-    //   serve: {
-    //     options: {
-    //       serve: true,
-    //       dest: '_site',
-    //       drafts: true,
-    //       raw: "baseurl: ''"
-    //     }
-    //   }
-    // },
 
     buildcontrol: {
       options: {
